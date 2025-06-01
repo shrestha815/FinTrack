@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '@/components/Card'
+import IncomeForm from '../income/IncomeForm'
 
 const Dashboard = () => {
   return (
@@ -25,6 +26,8 @@ const Dashboard = () => {
         <Card title="Spending Overview">
             <p>Chart goes here.</p>
         </Card>
+
+        <IncomeForm/>
     </div>
   )
 }
