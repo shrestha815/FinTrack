@@ -20,7 +20,7 @@ const initialState: TransactionState = {
 };
 
 const transactionSlice = createSlice({
-    name: 'transaction',
+    name: 'transactions',
     initialState,
     reducers: {
         addTransaction: (state,action: PayloadAction<Transaction>) => {

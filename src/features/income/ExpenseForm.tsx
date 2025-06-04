@@ -38,17 +38,30 @@ const ExpenseForm: React.FC = () => {
             placeholder="Amount"
             value={amount}
             onChange={e => setAmount(e.target.value)}
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded bg-white text-gray-900"
             required
             />
+            <select
+            title='category_selector' 
+            value={category}
+            onChange={e => setCategory(e.target.value)}
+            className="w-full p-2 border rounded bg-white text-gray-900"
+            required
+            >
+                <option value="">Select Category</option>
+                <option value="Rent">Rent</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Other">Other</option>
+            </select>
             <input 
             type ="text"
             placeholder="note (optional)"
             value = {note}
             onChange={e => setNote(e.target.value)}
-            className= "w-full p-2 border rounded"
+            className= "w-full p-2 border rounded bg-white text-gray-900"
             />
-            <button type= "submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add Income</button>
+            <button type= "submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add Expense</button>
         </form>
     </Card>
   );
