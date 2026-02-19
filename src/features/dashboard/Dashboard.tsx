@@ -2,6 +2,10 @@
 
 import React from 'react';
 import Card from '@/components/Card';
+import React from 'react'
+import { useAppSelector } from '@/hooks/useAppSelector';
+import { Transaction } from '@/types/transaction';
+import IncomeForm from '../income/IncomeForm'
 import ExpenseForm from '../income/ExpenseForm';
 import IncomeForm from '../income/IncomeForm';
 import TransactionList from '../transactions/TransactionList';
