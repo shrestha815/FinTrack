@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { useAppSelector } from '@/hooks/useAppSelector';
-import { Transaction } from '../transactions/transactionSlice';
+import { Transaction } from '@/types/transaction';
 import Card from '@/components/Card'
 import IncomeForm from '../income/IncomeForm'
 import ExpenseForm from '../income/ExpenseForm';
